@@ -30,9 +30,12 @@ public class RadioButton {
 	    leave.selectByVisibleText("Cancel");
 		
 		// profile page set up script
-	    driver.findElement(By.id("welcome")).click();
-	    driver.findElement(By.id("aboutDisplayLink")).click();
-	    driver.findElement(By.className("close")).click();
+//	    driver.findElement(By.id("welcome")).click();
+//	    driver.findElement(By.id("aboutDisplayLink")).click();
+//	    driver.findElement(By.className("close")).click();
+	    
+	    Select profile=new Select(driver.findElement(By.id("welcome")));
+	    profile.selectByVisibleText("About");
 	    
 	}
 
