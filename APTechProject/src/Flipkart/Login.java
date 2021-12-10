@@ -24,7 +24,7 @@ public class Login {
 		//driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[2]/div/form/div[1]/input")).sendKeys("8668840881");
         driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[2]/div/form/div[1]/input")).sendKeys("7259755840");
 	    Thread.sleep(5000);
-        driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[2]/div/form/div[2]/input")).sendKeys("password123");
+        driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[2]/div/form/div[2]/input")).sendKeys("1529@Mypassword");
         Thread.sleep(1000);
         driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[2]/div/form/div[4]/button")).click();
         //Forget Password 
@@ -32,12 +32,15 @@ public class Login {
 //        driver.findElement(By.xpath("/html/body/div[2]/div/div/div/div/div[2]/div/form/div[4]/button")).click();
 //        
 	    //Item Search
+        Thread.sleep(5000);
+		driver.findElement(By.className("_3704LK")).sendKeys("Readmi 9A");
+		driver.findElement(By.className("_34RNph")).click();
 		
-	//	driver.findElement(By.className("_3704LK")).sendKeys("Readmi 9A");
-	//	driver.findElement(By.className("_34RNph")).click();
+		//select item 
+//		driver.findElement(By.linkText("Redmi 9A (SeaBlue, 32 GB)")).click();
 		
-		Thread.sleep(3000);
-	    driver.close();
+//	    Thread.sleep(10000);
+//	    driver.close();
 	    
 	}
 
