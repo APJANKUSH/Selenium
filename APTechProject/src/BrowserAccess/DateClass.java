@@ -28,15 +28,15 @@ public class DateClass {
 		driver.findElement(By.id("menu_leave_viewLeaveModule")).click();
 		
 		
-		Select datepick = new Select(driver.findElement(By.id("calFromDate")));
+		Select datepick = new Select(driver.findElement(By.className("ui-datepicker-month")));
 		datepick.selectByValue("11");
 		System.out.println(datepick);
-		Select datepick1 = new Select(driver.findElement(By.id("calFromDate")));
+		Select datepick1 = new Select(driver.findElement(By.className("calFromDate")));
 		datepick1.selectByValue("1998");
 		
-		Select datepick2 = new Select(driver.findElement(By.id("calFromDate")));
+		Select datepick2 = new Select(driver.findElement(By.className("calFromDate")));
 		datepick2.deselectByVisibleText("31");
-//ui-state-default ui-state-hover
+		
 	}
 
 }
