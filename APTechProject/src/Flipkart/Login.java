@@ -37,10 +37,13 @@ public class Login {
 		driver.findElement(By.className("_34RNph")).click();
 		
 		//select item 
-//		driver.findElement(By.linkText("Redmi 9A (SeaBlue, 32 GB)")).click();
-		
-//	    Thread.sleep(10000);
-//	    driver.close();
+		Thread.sleep(1000);
+	    driver.findElement(By.xpath("//div[contains(text(),'Redmi 9A (SeaBlue, 32 GB)')]")).click();
+		driver.findElement(By.xpath("driver.findElement(By.xpath(\"//div[contains(text(),'Redmi 9A (SeaBlue, 32 GB)')]\")).click();")).click();
+	    
+	    ////*[@id="container"]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button
+	    Thread.sleep(1000);
+	    driver.close();
 	    
 	}
 
