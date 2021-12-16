@@ -3,6 +3,7 @@ package BrowserAccess;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.Select;
 
 public class Browser {
@@ -12,6 +13,8 @@ public class Browser {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\user\\Desktop\\APJ\\Selenium\\Drivers-or-jar\\Chrome\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		//Browser Script
+		ChromeOptions opt=new ChromeOptions();
+		opt.addArguments("--incognito");
 		driver.get("https:\\www.google.com");
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		driver.manage().window().maximize();
