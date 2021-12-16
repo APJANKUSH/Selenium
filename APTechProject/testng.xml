@@ -2,8 +2,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
+  	<groups>
+  		<run>
+  			<exclude name = "SmokeTest"/>	
+  		</run>
+  	</groups>
     <classes>
-      <class name="Flipkart.TestNGClass"/>
+      <class name="TestNG_Groups.Home_Loan"/>
+      <class name="TestNG_Groups.Car_Loan"/>
+      <class name="TestNG_Groups.Personal_Loan"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

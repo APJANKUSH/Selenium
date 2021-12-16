@@ -1,4 +1,4 @@
-package Flipkart;
+package TestNG;
 
 import org.testng.annotations.Test;
 
